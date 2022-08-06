@@ -24,32 +24,12 @@ The following is a list of different sections of the script, which are broken up
 12. RESTART SSHD / apply settings by restarting systemctl
 13. INSTALL COMPLETE / display new SSH and login info
 
-I aggregated these steps from several different server hardening guides and selected the most effective of them to include in this script. The goal is to make something simple enough for newcomers to use while still being practical and saving time for seasoned Linux veterans. I am certainly open to suggestions and would like to keep this easy and practical to use.
-
-If this script helps you out, please contribute some feedback. Donations are also welcome and help permit me to continue to develop this and other projects.
-
-```
-HLM: SYQJrFYL7VrEPN7HyhGFBB35nvZ2k1Fbjo
-BTC: 3LbUJVW9WmXPgFStTXSLTBwjpnbVTtt8Ja
-TRON: TLsday62mhM67Sv5G5Z5Ju66TezJuVFbiw
-DGB: DUJ8W8QpmVex87posFPoDYGg5FrYCoMLGq
-DOGE: DH9Sj3DQNVBaxb6kZBXc6X2MPQjbv7H6oy
-```
-
-## Referral Links
-
-Please [use my Vultr referral link](https://www.vultr.com/?ref=7568060) when creating your VPS account at Vultr to support my projects and build some good karma.<br/>
-
-<p align="center"><a href="https://www.vultr.com/?ref=7568060"><img src="https://www.vultr.com/media/banner_1.png"></a></p>
-
-[Digital Ocean](https://www.digitalocean.com/?refcode=bd6020302487) is also very generous, and give a free credit of $100 to use while testing the site to decide if it is right for you.
-
 # Installation
 
 SSH into your VPS and run this command to clone the Github repository and begin installation:
 
 ```bash
-sudo git clone https://github.com/akcryptoguy/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
+sudo git clone https://github.com/Yassakesbi/vps-harden.git && cd vps-harden && sudo bash get-hard.sh
 ```
 
 The script will then walk you through each of the server hardening steps, offering prompts for feedback and other notes along the way. You really can't mess it up. I have tried.
@@ -102,22 +82,3 @@ Additionally, there are some additional files you can modify to suit your needs.
 
 I have tried to troubleshoot the script for errors and confirmed that it works with a VPS you configure on [Vultr](https://www.vultr.com/?ref=7568060), 
 [Digital Ocean](https://www.digitalocean.com/?refcode=bd6020302487), and [Be Your Own VPS](https://www.youtube.com/playlist?list=PLTblguczzdyajCPQGlpJjHUvSNV8WNsGQ). It works in all of these as long as you're using Ubuntu 16.04, 18.04, or 20.04 LTS. I have not tested it with anything but Ubuntu.
-
-## Social and Contact
-
-**Follow AKcryptoGUY online:** <br/>
-**Medium →** https://medium.com/@AKcryptoGUY <br/>
-**Twitter →** https://twitter.com/AKcryptoGUY <br/>
-**Facebook →** https://www.facebook.com/AKcryptoGUY <br/>
-**YouTube →** https://www.youtube.com/channel/UCIFu9OZWOtfxokGdFY6aTog <br/>
-
-Reach out to me at akcryptoguy<img src="https://www.freeiconspng.com/uploads/at-sign-icon-1.png" alt="@ symbol" height="11">protonmail.com for suggestions or questions and if I helped save you some time, please send some crypto my way.
-
-
-```
-HLM: SYQJrFYL7VrEPN7HyhGFBB35nvZ2k1Fbjo
-BTC: 3LbUJVW9WmXPgFStTXSLTBwjpnbVTtt8Ja
-TRON: TLsday62mhM67Sv5G5Z5Ju66TezJuVFbiw
-DGB: DUJ8W8QpmVex87posFPoDYGg5FrYCoMLGq
-DOGE: DH9Sj3DQNVBaxb6kZBXc6X2MPQjbv7H6oy
-```
