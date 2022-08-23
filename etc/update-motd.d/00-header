@@ -36,4 +36,9 @@ printf "${color14}`uname -srmo`${nocolor}\n"
 printf "Weather (${weathercity}): `curl -s "${weatherurl}" | sed -n '/Currently:/ s/.*: \(.*\): \([0-9]*\)\([CF]\).*/\2°\3, \1/p'`\n"
 printf "External IP: ${color9}`/usr/bin/wget -q -O - http://ipv4.icanhazip.com/ | /usr/bin/tail` ${nocolor}\n"
 printf "Uptime: ${color4} `/usr/bin/uptime -p`  ${nocolor}\n"
-printf "               ${color1}   ${nocolor}\n"
+memory_usage=`free -m | awk '/Mem:/ { printf("%3.1f%%", $3/$2*100) }'`
+processes=`ps aux | wc -l`
+printf "Memory Usage:\t%s\n" $memory_usage
+printf "Processes: \t%s\n" $processes
+
+#printf "               ${color1}   ${nocolor}\n"
